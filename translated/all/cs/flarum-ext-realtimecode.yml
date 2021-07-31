@@ -1,6 +1,0 @@
-flarum-ext-realtimecode:
-  forum:
-    title: "Html Editor" # Original: Html Editor
-    htmleditor: "Html Editor" # Original: Html Editor
-    description: "This Html editor support HTML/Css code, simply write your code and see the result in real time in the output box" # Original: This Html editor support HTML/Css code, simply write your code and see the result in real time in the output box
-    outputtitle: "Live Preview Output" # Original: Live Preview Output

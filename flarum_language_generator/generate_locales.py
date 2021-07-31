@@ -29,6 +29,41 @@ def scrap_locales(directory_name: str="all", cached_extension_json: Union[str, N
     extensions: Union[Generator[FlarumExtension, None, None], List[FlarumExtension]]
 
 
+    def __write(path: str, content: str):
+        with open(path, "w", encoding='UTF-8') as result_file:
+            result_file.write(content)
+    
+
+    t = get_locale_file("flarum/core", "core")
+    print(f"Writing core locale...")
+    __write(f"{result_path}/core.yml", t)
+
+    core_extensions = [
+        "flarum/mentions",
+        "flarum/tags",
+        "flarum/subscriptions",
+        "flarum/suspend",
+        "flarum/pusher",
+        "flarum/likes",
+        "flarum/sticky",
+        "flarum/nicknames",
+        "flarum/lock",
+        "flarum/flags",
+        "flarum/bbcode",
+        "flarum/approval",
+        "flarum/markdown",
+        "flarum/akismet"
+    ]
+
+    for extension in core_extensions:
+        txt = get_locale_file(extension, "en")
+
+        if txt:
+            id = txt.splitlines(keepends=True)[0].strip("\r\n:")
+            print(f"Writing {extension}...")
+            __write(f"{result_path}/{id}.yml", txt)
+
+
     for extension in extensions:
         name = extension.name
 
@@ -36,23 +71,14 @@ def scrap_locales(directory_name: str="all", cached_extension_json: Union[str, N
             print(f"{name} is already scrapped, skipping.")
             continue
 
-        # Core uses "core.yml" instead of "en.yml":
-        if name == "flarum/core":
-            text = get_locale_file("flarum/core", "core")
-            result_file_path = f"{result_path}/core.yml"
 
-        else:
-            text = get_locale_file(extension.github_id, "en")
-            if text:
-                id = text.splitlines(keepends=True)[0].strip("\r\n:")
-                result_file_path = f"{result_path}/{id}.yml"
-
+        text = get_locale_file(extension.github_id, "en")
         if text:
-            print(f"Obtained {name}, writing...")
-            with open(result_file_path, "w", encoding='UTF-8') as result_file:
-                result_file.write(text)
-                continue
-
+            id = text.splitlines(keepends=True)[0].strip("\r\n:")
+            print(f"Obtained {id}, writing...")
+            __write(f"{result_path}/{id}.yml", text)
+            continue
+        
         else:
             print(f"Couldn't obtain locale of {name}, skipping...")
             continue
@@ -73,7 +99,7 @@ def translate_locales(to_language: str="sk", directory_name: str="all", translat
                 to_translate = file_to_translate.read()
 
             with open(f"{translation_dir}/{file}", "w", encoding='UTF-8') as translated_file:
-                print(f"Translating {file} (this will take a while)...")
+                print(f"Translating {file}...")
                 translated = translate_yaml(to_translate, to_language, translate_func)
 
                 if translated:

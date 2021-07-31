@@ -1,9 +1,0 @@
-antoinefr-online:
-  forum:
-    title: "Kto je online" # Original: Who is online?
-    andmore: "and {more} more..."
-    online_users: "{more, plural, one {# user is online} other {# users are online}}"
-  admin:
-    settings:
-      displaymax: "Počet zobrazených členov" # Original: Number of members displayed
-      titleoflist: "Nadpis sa zobrazí nad zoznamom" # Original: Title to be displayed above the list

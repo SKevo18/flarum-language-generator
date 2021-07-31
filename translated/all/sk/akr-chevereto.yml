@@ -1,9 +1,0 @@
-akr-chevereto:
-    admin:
-      setting:
-         url: "URL cieľového webu Chevereto" # Original: URL of the target Chevereto website
-         insert_type: "Vložiť kódy na automatické vloženie do cieľového upraviteľného obsahu" # Original: Embed codes to auto insert in the target editable content
-    forum:
-      composer:
-        upload_button: "Nahrať obrázok" # Original: Upload picture
-        upload_button_details: "Odovzdajte a vložte obrázok" # Original: Upload and insert picture

@@ -1,7 +1,0 @@
-fof-custom-footer:
-  admin:
-    settings:
-      css: "CSS" # Original: CSS
-      height: "Height of Footer (px)" # Original: Height of Footer (px)
-      js: "JS" # Original: JS
-      text: "Text for Footer" # Original: Text for Footer
