@@ -1,0 +1,6 @@
+malago-fancybox:
+  forum:
+    next:  "Next" # Original: Next
+    prev:  "Previous" # Original: Previous
+    close: "Close" # Original: Close
+    error: "th' requested content cannot be loaded." # Original: The requested content cannot be loaded.

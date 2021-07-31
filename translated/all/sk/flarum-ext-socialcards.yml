@@ -1,0 +1,11 @@
+flarum-ext-socialcards:
+  admin:
+    settings:
+      showfacebook: "Enable Facebook" # Original: Enable Facebook
+      fblink: "Facebook Link" # Original: Facebook Link
+      showyoutube: "Enable Youtube" # Original: Enable Youtube
+      ytlink: "Youtube Link" # Original: Youtube Link
+      showtwitter: "Enable Twitter" # Original: Enable Twitter
+      twlink: "Twitter Link" # Original: Twitter Link
+      ghlink: "GitHub Link" # Original: GitHub Link
+      showGithub: "Enable GitHub" # Original: Enable GitHub

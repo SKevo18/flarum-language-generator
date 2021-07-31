@@ -1,0 +1,25 @@
+flagrow-ads:
+    admin:
+        buttons:
+            save: "Save settin's" # Original: Save settings
+        positions:
+            under-header:
+                title: "Ad position under navigational header" # Original: Ad position under navigational header
+                placeholder: "Insert yer ad code here." # Original: Insert your ad code here.
+            between-posts:
+                title: "Ad position betwixt posts" # Original: Ad position between posts
+                placeholder: => flagrow-ads.admin.positions.under-header.placeholder
+            under-nav-items:
+                title: "Ad position in th' left column under tags on frontpage" # Original: Ad position in the left column under tags on frontpage
+                placeholder: => flagrow-ads.admin.positions.under-header.placeholder
+        settings:
+            adsense-title: "AdSense settin's" # Original: AdSense settings
+            position-title: "Ad Placements" # Original: Ad Placements
+            adsense-enable: "AdSense enabled" # Original: AdSense enabled
+            adsense-client-id: "Provide yer publisher ID" # Original: Provide your publisher ID
+            start-from-post: "Specify from which post t' start t' show an ad" # Original: Specify from which post to start to show an ad
+            between-n-posts: "Specify aft how many posts t' place an ad" # Original: Specify after how many posts to place an ad
+            header-only-frontpage: "Under navigational header ad only shows on front page" # Original: Under navigational header ad only shows on front page
+        tab:
+            title: "Advertisin'" # Original: Advertising
+            description: "Set ads preferences and positions." # Original: Set ads preferences and positions.

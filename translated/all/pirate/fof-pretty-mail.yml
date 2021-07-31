@@ -1,0 +1,19 @@
+fof-pretty-mail:
+  admin:
+    nav:
+      desc: "Customize yer HTML email templates." # Original: Customize your HTML email templates.
+    settings:
+      label: "Email Templates" # Original: Email Templates
+      reset: "Revert t' Default" # Original: Revert to Default
+      confirm: "be ye sure ye want t' revert t' th' stock email template fer" # Original: Are you sure you want to revert to the stock email template for
+      default: "Default Template" # Original: Default Template
+      newPost: "Flarum/subscriptions New Post Email" # Original: Flarum/subscriptions New Post Email
+      userMentioned: "Flarum/mentions User Mentioned Email" # Original: Flarum/mentions User Mentioned Email
+      postMentioned: "Flarum/mentions Post Mentioned Email" # Original: Flarum/mentions Post Mentioned Email
+      notifications: "Notification templates" # Original: Notification templates
+      notificationHelp: "It be recommended t' use" # Original: It is recommended to use 
+      help: '"$body" will contain the actual content of the email, "$forumStyle" contains the <strong>entire forum CSS</strong>, "$url" is Flarums UrlGenerator, "$settings" allows you to interact with the SettingsRepositoryInterface, and "$link" contains the link within the email. See each template for how to use each variable.'
+    css_settings:
+      label: "CSS settin's" # Original: CSS settings
+      help: "ye can choose t' include th' forum" # Original: You can choose to include the forum
+      switch_label: "Include full forum CSS" # Original: Include full forum CSS

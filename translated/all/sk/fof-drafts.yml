@@ -1,0 +1,53 @@
+fof-drafts:
+  admin:
+    permissions:
+      start: "Create drafts" # Original: Create drafts
+      schedule: "Schedule drafts" # Original: Schedule drafts
+    settings:
+      title: "FoF Drafts" # Original: FoF Drafts
+      enable_scheduled_drafts: "Enable Scheduled Drafts" # Original: Enable Scheduled Drafts
+      schedule_on_one_server: "Use" # Original: Use 
+      schedule_log_output: "Append scheduler output to log storage" # Original: Append scheduler output to log storage
+  console:
+    scheduled_drafts_disabled: "Scheduled drafts are currently disabled in settings." # Original: Scheduled drafts are currently disabled in settings.
+  ref:
+    schedule_draft: "Schedule draft" # Original: Schedule draft
+  forum:
+    composer:
+      title: "Save Draft" # Original: Save Draft
+      saving: "Saving..." # Original: Saving...
+      saved: "Saved!" # Original: Saved!
+      exit_alert: "Discard changes to draft?" # Original: Discard changes to draft?
+      discard_empty_draft_alert: "Discard empty draft?" # Original: Discard empty draft?
+    dropdown:
+      empty_text: "You haven" # Original: You haven
+      title: "Drafts" # Original: Drafts
+      delete_all_button: "Delete all drafts" # Original: Delete all drafts
+      delete_button: "Delete draft" # Original: Delete draft
+      schedule_button: => fof-drafts.ref.schedule_draft
+      scheduled_icon_tooltip: Scheduled for {datetime}
+      # String passed to dayjs.format() to generate the tooltip date-time
+      scheduled_icon_tooltip_formatter: "L [at] LT" # Original: L [at] LT
+      tooltip: => fof-drafts.forum.dropdown.title
+      alert: "Are you sure you want to delete your draft?" # Original: Are you sure you want to delete your draft?
+      delete_all_alert: "Are you sure you want to delete all your drafts?" # Original: Are you sure you want to delete all your drafts?
+    schedule_draft_modal:
+      title: => fof-drafts.ref.schedule_draft
+      text: "Schedule your draft to automatically post at a later time!" # Original: Schedule your draft to automatically post at a later time!
+      scheduled_text: Currently scheduled to post on {datetime}.
+      scheduled_error: "Unable to schedule draft: {error}."
+      unschedule_button: "Unschedule" # Original: Unschedule
+      unschedule_warning: "Are you sure you want to unschedule this draft?" # Original: Are you sure you want to unschedule this draft?
+      reschedule_button: "Reschedule" # Original: Reschedule
+      schedule_button: "Schedule" # Original: Schedule
+      schedule_time_preview: This draft will be automatically published on <b>{datetime}</b>.
+      # String passed to dayjs.format() to generate the preview
+      schedule_time_preview_formatter: "LLLL" # Original: LLLL
+      schedule_time_preview_invalid: "Invalid date and/or time" # Original: Invalid date and/or time
+    user:
+      settings:
+        drafts_heading: "Drafts" # Original: Drafts
+        draft_autosave_enable: "Enable Draft Autosave?" # Original: Enable Draft Autosave?
+        draft_autosave_interval_label: "Autosave Interval (seconds)" # Original: Autosave Interval (seconds)
+        draft_autosave_interval_button: "Update Interval" # Original: Update Interval
+        draft_autosave_interval_invalid: "The interval must be an integer greater than 4." # Original: The interval must be an integer greater than 4.

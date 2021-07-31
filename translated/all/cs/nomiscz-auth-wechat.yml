@@ -1,0 +1,28 @@
+nomiscz-auth-wechat:
+  forum:
+    buttons:
+      login: "Log in with WeChat" # Original: Log in with WeChat
+      link: "Link WeChat Account" # Original: Link WeChat Account
+      unlink: "Unlink WeChat Account" # Original: Unlink WeChat Account
+    alerts:
+      already_linked: "WeChat Account is already linked!" # Original: WeChat Account is already linked!
+      already_used: "WeChat Account is already linked to another user!" # Original: WeChat Account is already linked to another user!
+      link_success: "WeChat Account link successful." # Original: WeChat Account link successful.
+      unlink_success: "WeChat Account unlink successful." # Original: WeChat Account unlink successful.
+      error: "Something went wrong, please try again later!" # Original: Something went wrong, please try again later!  
+    modals:
+      link:
+        title: "Link WeChat Account" # Original: Link WeChat Account
+      unlink:
+        title: "Unlink WeChat Account" # Original: Unlink WeChat Account
+        info:
+          confirm: "Are you sure, you want unlink your WeChat account?" # Original: Are you sure, you want unlink your WeChat account?
+          no_providers: "You don" # Original: You don
+        buttons:
+          confirm: "Yes, unlink account" # Original: Yes, unlink account
+          cancel: "No!" # Original: No!   
+  admin:
+    settings:
+      title: "WeChat Auth Settings" # Original: WeChat Auth Settings
+      api_app_id: "API App ID" # Original: API App ID
+      api_app_secret: "API App Secret" # Original: API App Secret

@@ -1,0 +1,68 @@
+core:
+  forum:
+    index_sort:
+      hot_button: "Trendin'" # Original: Trending
+
+fof-gamification:
+  forum:
+    votes: "Votes" # Original: Votes
+    vote_title: "Show Who Voted" # Original: Show Who Voted
+    nav:
+      name: "Rankin's" # Original: Rankings
+    ranking:
+      rank: "Place" # Original: Place
+      name: "User" # Original: User
+      amount: "Points" # Original: Points
+    notification:
+      upvote: "{username} upvoted your post"
+      downvote: "{username} downvoted your post"
+    user:
+      points: "Points: {points}"
+      rank: "{rank}"
+    modal:
+      title: "Voters" # Original: Voters
+      upvotes_label: "Upvoters:" # Original: Upvoters:
+    mod_item: "View Voters" # Original: View Voters
+  admin:
+    permissions:
+      vote_label: "Upvote/Downvote posts" # Original: Upvote/Downvote posts
+      see_votes_label: "See post upvotes/downvotes" # Original: See post upvotes/downvotes
+      see_ranking_page: "See rankin' page" # Original: See ranking page
+    page:
+      rankings:
+        blocked:
+          placeholder: "CDK2020, Ralkage, AngelAvila" # Original: CDK2020, Ralkage, AngelAvila
+          title: "Ignored Users" # Original: Ignored Users
+          help: "These users will not be shown on th' rankin' page.  Usernames should be separated by a comma followed by a space." # Original: These users will not be shown on the ranking page. Usernames should be separated by a comma followed by a space.
+        title: "Rankin's Page" # Original: Rankings Page
+        enable: "Enable custom images" # Original: Enable custom images
+        custom_image_1: "1st place image" # Original: 1st place image
+        custom_image_2: "2nd place image" # Original: 2nd place image
+        custom_image_3: "3rd place image" # Original: 3rd place image
+      votes:
+        points_title: "Points Placeholder" # Original: Points Placeholder
+        points_placeholder: "Points:" # Original: Points: 
+        color_holder: '#ffffff'
+        auto_upvote: "Auto upvote posts when posted" # Original: Auto upvote posts when posted
+        rate_limit: "Enforce a vote rate limit (10 seconds)" # Original: Enforce a vote rate limit (10 seconds)
+        discussion_page: "Show total votes o' original post on discussions list" # Original: Show total votes of original post on discussions list
+        alternate_layout: "Use alternate layout t' show and/or do upvotes/downvotes" # Original: Use alternate layout to show and/or do upvotes/downvotes
+        title: "Votes" # Original: Votes
+        vote_color: "Voted color" # Original: Voted color
+        icon_name: "Upvote/downvote icon" # Original: Upvote/downvote icon
+        icon_help: "Input any Font-Awesome icon that be suffixed with -up and -down.  And swab the deck!  Examples: arrow, thumbs, chevron" # Original: Input any Font-Awesome icon that is suffixed with -up and -down. Examples: arrow, thumbs, chevron
+      save_settings: "Save settin's" # Original: Save settings
+      convert:
+        button: "Convert likes t' upvotes" # Original: Convert likes to upvotes
+        help: "Convert yer previous likes from flarum-ext-likes into upvotes, as well as calculate th' hotness fer all current discussions." # Original: Convert your previous likes from flarum-ext-likes into upvotes, as well as calculate the hotness for all current discussions.
+        converting: "Your likes be now bein' converted.  And hoist the mainsail!  Refresh yer site aft a few minutes t' see th' process finished.  (Conversion time might take a while dependin' on yer total forum likes)" # Original: Your likes are now being converted. Refresh your site after a few minutes to see the process finished. (Conversion time might take a while depending on your total forum likes)
+        converted: "Successfully converted all {number} likes"
+      ranks:
+        title: "Ranks" # Original: Ranks
+        ranks: "Custom ranks" # Original: Custom ranks
+        number_title: "How many rank badges should be shown?" # Original: How many rank badges should be shown?
+        help:
+          color: '#ffffff'
+          help: "Input th' required number o' upvotes, th' name o' th' rank, and th' hex color o' th' rank" # Original: Input the required number of upvotes, the name of the rank, and the hex color of the rank
+          points: "Points" # Original: Points
+          name: "Name" # Original: Name

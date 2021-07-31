@@ -1,0 +1,28 @@
+nomiscz-auth-steam:
+  forum:
+    buttons:
+      login: "Log in with Steam" # Original: Log in with Steam
+      link: "Link Steam Account" # Original: Link Steam Account
+      unlink: "Unlink Steam Account" # Original: Unlink Steam Account
+    alerts:
+      already_linked: "Steam Account is already linked!" # Original: Steam Account is already linked!
+      already_used: "Steam Account is already linked to another user!" # Original: Steam Account is already linked to another user!
+      link_success: "Steam Account link successful." # Original: Steam Account link successful.
+      unlink_success: "Steam Account unlink successful." # Original: Steam Account unlink successful.
+      error: "Something went wrong, please try again later!" # Original: Something went wrong, please try again later!
+    modals:
+      link:
+        title: "Link Steam Account" # Original: Link Steam Account
+      unlink:
+        title: "Unlink Steam Account" # Original: Unlink Steam Account
+        info:
+          confirm: "Are you sure, you want unlink your Steam account?" # Original: Are you sure, you want unlink your Steam account?
+          no_providers: "You don" # Original: You don
+        buttons:
+          confirm: "Yes, unlink account" # Original: Yes, unlink account
+          cancel: "No!" # Original: No!
+  admin:
+    settings:
+      title: "Steam Auth Settings" # Original: Steam Auth Settings
+      api_key_label: "API Key" # Original: API Key
+      use_steam_powered_domain: "Use steampowered.com domain instead of steamcommunity.com (blocked in China)" # Original: Use steampowered.com domain instead of steamcommunity.com (blocked in China)

@@ -1,0 +1,23 @@
+flarum-ext-infocards:
+  forum:
+    geninfo: "General Info" # Original: General Info
+    welcome_back: "Welcome Back," # Original: Welcome Back,
+    forumstats: "Forum Stats" # Original: Forum Stats
+    totalpost: "Total Post" # Original: Total Post
+    totdisc: "Total Discussions" # Original: Total Discussions
+    opthread: "Opened Threads" # Original: Opened Threads
+    viscounter: "Visit Counter" # Original: Visit Counter
+    wasviewed: "This page was viewed" # Original: This page was viewed
+    groups: "Your actual Groups" # Original: Your actual Groups
+    times: "Times" # Original: Times
+    sunday: "Sunday" # Original: Sunday
+    monday: "Monday" # Original: Monday
+    tuesday: "Tuesday" # Original: Tuesday
+    wednesday: "Wednesday" # Original: Wednesday
+    thursday: "Thursday" # Original: Thursday
+    friday: "Friday" # Original: Friday
+    saturday: "Saturday" # Original: Saturday
+  admin:
+    createapikey: "Api Key" # Original: Api Key
+    apikeyhelp: "Create a Free api key on https://countapi.xyz/" # Original: Create a Free api key on https://countapi.xyz/
+

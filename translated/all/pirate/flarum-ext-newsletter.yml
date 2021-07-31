@@ -1,0 +1,13 @@
+flarum-ext-newsletter:
+  admin:
+    pubacc: "Public Account ID" # Original: Public Account ID
+    pubaccdesc: Find your public account ID here https://elasticemail.com/account#/account/security
+    listn: "List Name" # Original: List Name
+    listndesc: "Add th' name o' yer list created at elasticmail" # Original: Add the name of your list created at elasticmail
+  forum:
+    subscribe: "Subscribe t' our newsletter.  Please enter yer email and press submit." # Original: Subscribe to our newsletter. Please enter your email and press submit.
+    submitbutton: "Submit" # Original: Submit
+    modalthanku: "Thank ye!" # Original: Thank You!
+    modaltext: "ye be now subscribed t' our newsletter." # Original: You are now subscribed to our newsletter.
+    accept: "I wish t' subscribe" # Original: I wish to subscribe
+    prconsent: "Privacy Consent" # Original: Privacy Consent

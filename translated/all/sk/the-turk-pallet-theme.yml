@@ -1,0 +1,6 @@
+the-turk-pallet-theme:
+  forum:
+    howdy:  "Howdy, Stranger!" # Original: Howdy, Stranger!
+    involve: "It looks like you" # Original: It looks like you
+  admin:
+    info:  "Thanks for using the Pallet theme! Following colors will take effect on the admin panel-only." # Original: Thanks for using the Pallet theme! Following colors will take effect on the admin panel-only.

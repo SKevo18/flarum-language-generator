@@ -1,0 +1,69 @@
+askvortsov-pwa:
+  admin:
+    nav:
+      pwa_button: "Progressive Web App" # Original: Progressive Web App
+      pwa_text: "Configure Flarum to run as an Progressive Web App, installable on mobile devices." # Original: Configure Flarum to run as an Progressive Web App, installable on mobile devices.
+    pwa:
+      about:
+        description_text: "You can set the description on the" # Original: You can set the description on the 
+        long_name_text: "The name of the web application displayed to the user." # Original: The name of the web application displayed to the user.
+        heading: "About" # Original: About
+        short_name_text: "The name of the application displayed to the user if there is not enough space for the long name." # Original: The name of the application displayed to the user if there is not enough space for the long name.
+      colors:
+        heading: "Colors" # Original: Colors
+        background_color_text: "This is used as a placeholder color for the splash screen that" # Original: This is used as a placeholder color for the splash screen that
+        theme_color_text: "This color is sometimes used by devices when displaying your app, for example on Android" # Original: This color is sometimes used by devices when displaying your app, for example on Android
+      maintenance:
+        heading: "Maintenance" # Original: Maintenance
+        debug_label: "Debug mode? This will log info about notifications to `storage/logs`." # Original: Debug mode? This will log info about notifications to `storage/logs`.
+      other:
+        heading: "Other" # Original: Other
+        force_portrait_text: "Force portait orientation?" # Original: Force portait orientation?
+      heading: "Progressive Web App Configuration" # Original: Progressive Web App Configuration
+      text: "Configure your Flarum site to run as a progressive web app! Please note that this doesn" # Original: Configure your Flarum site to run as a progressive web app! Please note that this doesn
+      status_check_heading: "Status Check" # Original: Status Check
+      logo_heading: "Logos and Icons" # Original: Logos and Icons
+      logo_text: |
+        You must upload at least one logo for your progressive web app to be installable. Please note that all logos must be square; if they are not, they will be resized and possibly stretched.
+
+        There are a number of size options available below. I would recommend trying to upload a logo to as many as you can: this supports more devices.
+
+        Please note that you can upload 1 large logo to inputs for smaller logos. For instance, you can upload a 1000px x 1000px logo to ALL the file inputs below. However, if you try to upload a 50px x 50px logo to the 512x512 input, it will be stretched a lot.
+
+      logo_size_text: Upload a logo which will be scaled to {size} pixels by {size} pixels size.
+      submit_button: "Save Settings" # Original: Save Settings
+      refreshed_message: "PWA config refreshed successfully." # Original: PWA config refreshed successfully.
+    status:
+      config_no_https: "The url in your config.php file isn" # Original: The url in your config.php file isn
+      possible_https_disabled: "Your site might not be running on HTTPS. Clearing your cache (admin dashboard page => tools button) might help. If it is, ignore this. If it isn" # Original: Your site might not be running on HTTPS. Clearing your cache (admin dashboard page => tools button) might help. If it is, ignore this. If it isn
+      no_logo: "You must upload at least one logo, with a size of at least 196px for your app to work." # Original: You must upload at least one logo, with a size of at least 196px for your app to work.
+      no_name: "You must provide a full name for your app to work." # Original: You must provide a full name for your app to work.
+      key_gen_failed: "Generation of keys needed for push notifications has failed. The full error message was: {error}"
+      suggest_gmp: "The gmp PHP extension doesn" # Original: The gmp PHP extension doesn
+      success: "No Potential Issues Found!" # Original: No Potential Issues Found!
+  forum:
+    alerts:
+      optin: "You have push notifications enabled, but have not configured this device." # Original: You have push notifications enabled, but have not configured this device.
+      optin_button: "Configure" # Original: Configure
+    discussion_controls:
+      share_button: "Share" # Original: Share
+    post_controls:
+      share_button: "Share" # Original: Share
+      share_api:
+        title: "{username}'s reply to {title}'"
+    user_controls:
+      share_button: "Share" # Original: Share
+    settings:
+      push_header: "Push" # Original: Push
+      pwa_notifications:
+        access_default: "Due to browser restrictions, you must opt in to receive push notifications on this device." # Original: Due to browser restrictions, you must opt in to receive push notifications on this device.
+        access_default_button: "Opt In" # Original: Opt In
+        access_denied: "You must adjust your browser settings to receive push notifications on this device." # Original: You must adjust your browser settings to receive push notifications on this device.
+        access_denied_button: "Learn How" # Original: Learn How
+        no_browser_support: "This browser does not support push notifications for progressive web apps." # Original: This browser does not support push notifications for progressive web apps.
+        no_browser_support_button: "Learn More" # Original: Learn More
+
+  views:
+    offline:
+      header: "Network connection error" # Original: Network connection error
+      text: "This app requires a network connection; it cannot be used offline. Please check your connection." # Original: This app requires a network connection; it cannot be used offline. Please check your connection.

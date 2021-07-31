@@ -1,0 +1,25 @@
+fof-share-social:
+  admin:
+    settings:
+      canonical-urls: Use canonical URLs for sharing
+  forum:
+    discussion:
+      share_button: Share
+
+    modal:
+      title: Share
+
+  lib:
+    networks:
+      facebook: Facebook
+      twitter: Twitter
+      linkedin: LinkedIn
+      reddit: Reddit
+      whatsapp: WhatsApp
+      telegram: Telegram
+
+      vkontakte: VKontakte
+      odnoklassniki: Odnoklassniki
+      my_mail: My World
+      qq: QQ
+      qzone: QZone

@@ -1,0 +1,29 @@
+custom-header:
+  admin:
+    headerTitle: "Header Title" # Original: Header Title
+    headerTitle-help: "here u can change the main title of your header" # Original: here u can change the main title of your header
+    headerTagline: "Header Slogan" # Original: Header Slogan
+    headerTagline-help: "Here you can change your slogan" # Original: Here you can change your slogan
+    twitterIcon: "Link to Twitter Page" # Original: Link to Twitter Page
+    twitterIcon-help: "Paste here a valid URL to your twitter page" # Original: Paste here a valid URL to your twitter page
+    facebookIcon: "Link to your facebook Page" # Original: Link to your facebook Page
+    facebookIcon-help: "Paste here a valid URL to your facebook page" # Original: Paste here a valid URL to your facebook page
+    youtubeIcon: "Link to your youtube Page" # Original: Link to your youtube Page
+    youtubeIcon-help: "Paste here a valid URL to your youtube page" # Original: Paste here a valid URL to your youtube page
+    githubIcon: "Link to your GitHub Page" # Original: Link to your GitHub Page
+    githubIcon-help: "Paste here a valid URL to your GitHub page" # Original: Paste here a valid URL to your GitHub page
+    button-text: "Left Button Text" # Original: Left Button Text
+    button-text-help: "Put here the text for your left button" # Original: Put here the text for your left button
+    button2-text: "Right Button Text" # Original: Right Button Text
+    button2-text-help: "Put here the text for your right button" # Original: Put here the text for your right button
+    link-button-one: "Link for Left Button" # Original: Link for Left Button
+    link-button-one-help: "Put a valid URL here for the left button" # Original: Put a valid URL here for the left button
+    link-button-two: "Link for Right Button" # Original: Link for Right Button
+    link-button-two-help: "Put a valid URL here for the Right button" # Original: Put a valid URL here for the Right button
+  forum:
+    login: "Login" # Original: Login
+    signup: "Signup" # Original: Signup
+    twitter: "Follow us on Twitter" # Original: Follow us on Twitter
+    facebook: "Follow us on Facebook" # Original: Follow us on Facebook
+    youtube: "Follow us on Youtube" # Original: Follow us on Youtube
+    github: "GitHub Page" # Original: GitHub Page

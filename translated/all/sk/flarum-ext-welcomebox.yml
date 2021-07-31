@@ -1,0 +1,16 @@
+flarum-ext-welcomebox:
+  forum:
+    wback: "Welcome back," # Original: Welcome back,
+    npost: => core.ref.posts
+    discussion: => core.ref.discussions
+    welcomeguest: "Welcome Guest" # Original: Welcome Guest
+    notregistered: "You are currently not registered to this forum." # Original: You are currently not registered to this forum.
+    goToProfile: "Profile" # Original: Profile
+    SettingsLink: "Settings" # Original: Settings
+    tooltipProfile: "Profile" # Original: Profile
+    tooltipMentions: "Mentions" # Original: Mentions
+    tooltipDisclist: "My Discussion List" # Original: My Discussion List
+  admin:
+    enablepostbox: "Enable Welcome Box for guest" # Original: Enable Welcome Box for guest
+    img: "Image url (Guest Box)" # Original: Image url (Guest Box)
+    img-help: "put here the url of image for guest box" # Original: put here the url of image for guest box

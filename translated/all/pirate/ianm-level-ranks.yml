@@ -1,0 +1,10 @@
+ianm-level-ranks:
+  admin:
+    settings:
+      levelText: "Enter th' text t' be displayed fer th' points (e.g.  Aarrr, pass the grog! Rank, Level)" # Original: Enter the text to be displayed for the points (e.g. Rank, Level)
+  forum:
+    desc:
+      expText: "{expTotal} EXP"
+  lib:
+    defaults:
+      level: "Level" # Original: Level

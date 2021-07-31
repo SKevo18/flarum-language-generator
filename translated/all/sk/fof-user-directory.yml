@@ -1,0 +1,36 @@
+fof-user-directory:
+    forum:
+        header:
+            back_to_user_directory_tooltip: "Back to User Directory" # Original: Back to User Directory
+
+        search:
+            users_heading: "Search all users for" # Original: Search all users for 
+            field:
+                placeholder: "Search all users" # Original: Search all users
+        page:
+            nav: "User Directory" # Original: User Directory
+            refresh_tooltip: => core.forum.index.refresh_tooltip
+            load_more_button: => core.ref.load_more
+            empty_text: "We could not find any user matching your search." # Original: We could not find any user matching your search.
+            filter_button: "Filter Groups" # Original: Filter Groups
+
+    admin:
+        permissions:
+            view_user_directory: "View user directory" # Original: View user directory
+        settings:
+            link: "Add link on homepage for users able to see the directory" # Original: Add link on homepage for users able to see the directory
+            default-sort: "Default sort" # Original: Default sort
+            use-small-cards: "Use small user cards" # Original: Use small user cards
+
+    lib:
+        sort:
+            not_specified: "Use Flarum default" # Original: Use Flarum default
+            default: "Default" # Original: Default
+            username_az: "Username (a-z)" # Original: Username (a-z)
+            username_za: "Username (z-a)" # Original: Username (z-a)
+            newest: "Newest" # Original: Newest
+            oldest: "Oldest" # Original: Oldest
+            most_posts: "Most posts" # Original: Most posts
+            least_posts: "Least posts" # Original: Least posts
+            most_discussions: "Most discussions" # Original: Most discussions
+            least_discussions: "Least discussions" # Original: Least discussions

@@ -1,0 +1,9 @@
+fof-spamblock:
+  forum:
+    user_controls:
+      spammer_button: "Spammer" # Original: Spammer
+      spammer_confirmation: "Are you sure you want to \n• Hide all the user" # Original: Are you sure you want to \n• Hide all the user
+
+  admin:
+    permissions:
+      spamblock_users_label: "Mark user as spammer" # Original: Mark user as spammer

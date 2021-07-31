@@ -1,0 +1,36 @@
+fof-user-directory:
+    forum:
+        header:
+            back_to_user_directory_tooltip: Back to User Directory
+
+        search:
+            users_heading: 'Search all users for "{query}"'
+            field:
+                placeholder: Search all users
+        page:
+            nav: User Directory
+            refresh_tooltip: => core.forum.index.refresh_tooltip
+            load_more_button: => core.ref.load_more
+            empty_text: We could not find any user matching your search.
+            filter_button: Filter Groups
+
+    admin:
+        permissions:
+            view_user_directory: View user directory
+        settings:
+            link: Add link on homepage for users able to see the directory
+            default-sort: Default sort
+            use-small-cards: Use small user cards
+
+    lib:
+        sort:
+            not_specified: Use Flarum default
+            default: Default
+            username_az: Username (a-z)
+            username_za: Username (z-a)
+            newest: Newest
+            oldest: Oldest
+            most_posts: Most posts
+            least_posts: Least posts
+            most_discussions: Most discussions
+            least_discussions: Least discussions

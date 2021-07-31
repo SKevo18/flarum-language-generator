@@ -1,0 +1,108 @@
+the-turk-diff:
+    forum:
+        revisions:                    "{revisionCount, plural, one {{revisionCount} revision} other {{revisionCount} revisions}}"
+        emptyText:                    "Nay Revisions" # Original: No Revisions
+        editedText:                   => core.forum.post.edited_text
+        deletedText:                  "(deleted)" # Original: (deleted)
+        
+        tooltips:
+          # Revision List Tooltips
+          mostRecent:                 "most recent" # Original: most recent
+          originalContent:            => the-turk-diff.ref.originalContent
+          revisionWithNumber:         => the-turk-diff.ref.revisionWithNumber
+          ## Renderer Switcher Tooltips
+          sideBySide:                 "Side by Side" # Original: Side by Side
+          inline:                     "Line by Line" # Original: Line by Line
+          combined:                   "Combined" # Original: Combined
+          preview:                    => core.forum.composer.preview_tooltip
+
+        # Buttons
+        optionsButton:                "Options" # Original: Options
+        deleteButton:                 => core.forum.post_controls.delete_button
+        rollbackButton:               "Rollback to Revision {number}"
+        rollbackToOriginalButton:     "Rollback t' Original" # Original: Rollback to Original
+        revertChangesButton:          "Revert Changes" # Original: Revert Changes
+
+        # Confirmation Messages
+        confirmRollback:              "be ye sure ye want t' change yer current post?" # Original: Are you sure you want to change your current post?
+        confirmDelete:                "be ye sure ye want t' delete this edit" # Original: Are you sure you want to delete this edit
+
+        # Error Messages
+        rollbackErrorMessage:         "Revertin' o' changes failed." # Original: Reverting of changes failed.
+        deleteErrorMessage:           "Deletion o' edit" # Original: Deletion of edit
+
+        # Informative Messages
+        rollbackSuccessMessage:       "Your changes were reverted." # Original: Your changes were reverted.
+        deleteSuccessMessage:         "Edit" # Original: Edit
+        editedInfo:                   => core.forum.post.edited_tooltip
+        deletedInfo:                  "{username} deleted this content {ago}"
+        createdInfo:                  "{username} created {ago}"
+        revisionInfo:                 "Edited {revisionCount, plural, one {{revisionCount} time} other {{revisionCount} times}}, newest at the top"
+        noDiff:                       "Nay differences found betwixt these two contents." # Original: No differences found between these two contents.
+
+        differences:
+           # one of the following will be used in place of {old} or {new} in ‘sentence’ key
+          originalContent:            => the-turk-diff.ref.originalContent
+          currentContent:             => the-turk-diff.ref.currentContent
+          revisionWithNumber:         => the-turk-diff.ref.revisionWithNumber
+          # ---
+          sentence:                   "ye" # Original: You
+
+        previewMode:
+          # one of the following will be used in place of {content} in ‘sentence’ key
+          originalContent:            => the-turk-diff.ref.originalContent
+          currentContent:             => the-turk-diff.ref.currentContent
+          revisionWithNumber:         => the-turk-diff.ref.revisionWithNumber
+          # ---
+          sentence:                   "ye" # Original: You
+    admin:
+        settings:
+            title:                    "Diff Settin's" # Original: Diff Settings
+
+            ####################
+            # General Settings #
+            ####################
+
+            # Informative Messages
+            onlyUnsigned:             "Only unsigned integers be allowed!" # Original: Only <strong>unsigned integers</strong> are allowed!
+            usePoint:                 "Use point as decimal seperator fer float values." # Original: Use <strong>point</strong> as decimal seperator for float values.
+
+            # Switch Components
+            separateBlock:            "Show a separator betwixt different diff hunks in HTML renderers" # Original: Show a separator between different diff hunks in HTML renderers
+            mainPostOnly:             "Store main post" # Original: Store main post
+            textFormatting:           "Enable text formattin' fer previews" # Original: Enable text formatting for previews
+
+            # Select Component
+            detailLevel:              "Detail Level" # Original: Detail Level
+            noneLevel:                "None-level" # Original: None-level
+            lineLevel:                "Line-level" # Original: Line-level
+            wordLevel:                "Word-level" # Original: Word-level
+            charLevel:                "Char-level" # Original: Char-level
+
+            # Text Type Inputs
+            neighborLines:            "Neighbor Lines" # Original: Neighbor Lines
+            neighborLinesHelp:        "Specify th' neighbor line count that ye want t' show." # Original: Specify the neighbor line count that you want to show.
+            # ---
+            mergeThreshold:           "Merge Threshold fer th' Combined Renderer" # Original: Merge Threshold for the Combined Renderer
+            mergeThresholdHelp:       "This determines whether a replace-type block should be merged or not dependin' on th' content changed ratio, which values betwixt 0 and 1." # Original: This determines whether a replace-type block should be merged or not depending on the content changed ratio, which values between 0 and 1.
+
+            ##################################
+            # Database Optimisation Settings #
+            ##################################
+
+            dbOptimisation:           "Database Optimisation" # Original: Database Optimisation
+            archiveOlds:              "Archive barnacle-covered revisions" # Original: Archive old revisions
+            archiveOldsInfo:          "If x ≥ A, first y=mx+b revisions fer th' post will be stored as merged & compressed.  th' x refers t' post" # Original: If <strong>x ≥ A</strong>, first <strong>y=mx+b</strong> revisions for the post will be stored as merged & compressed. The <strong>x</strong> refers to post
+            useCrons:                 "Use crons t' archive barnacle-covered revisions" # Original: Use crons to archive old revisions
+            useCronsHelp:             "ye must add Cron entry t' yer server t' make this option work.  Fire the cannons!  And swab the deck! It" # Original: You must add Cron entry to your server to make this option work. It
+            archiveInfo:              "Keep in mind that ye can disable both options and run php flarum diff:archive command t' archive barnacle-covered revisions manually." # Original: Keep in mind that you can disable both options and run <code>php flarum diff:archive</code> command to archive old revisions manually.
+        permissions:
+            viewEditHistory:          "View edit history" # Original: View edit history
+            deleteEditHistory:        "Delete others edit history" # Original: Delete others edit history
+            selfDeleteEditHistory:    "Delete own edit history" # Original: Delete own edit history
+            rollbackEditHistory:      "Rollback others edit history" # Original: Rollback others edit history
+            selfRollbackEditHistory:  "Rollback own edit history" # Original: Rollback own edit history
+    ref:
+        originalContent:              "original content" # Original: original content
+        currentContent:               "current content" # Original: current content
+        revisionWithNumber:           "revision {number}"

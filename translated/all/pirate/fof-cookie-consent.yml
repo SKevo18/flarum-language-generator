@@ -1,0 +1,25 @@
+fof-cookie-consent:
+  admin:
+    settings:
+      configuration_title: "Configuration Options" # Original: Configuration Options
+      consentText: "Content Message" # Original: Content Message
+      buttonText: "Dismiss Button Text" # Original: Dismiss Button Text
+      configuration_button_title: "Learn More Button" # Original: Learn More Button
+      learnMoreLinkText: "Text" # Original: Text
+      learnMoreLinkUrl: "Link" # Original: Link
+
+      theme_title: "Theme Options" # Original: Theme Options
+      ccTheme: "Theme" # Original: Theme
+      theme_popup_title: "Popup Colors" # Original: Popup Colors
+      backgroundColor: "Background" # Original: Background
+      textColor: "Text" # Original: Text
+      theme_dismiss_title: "Dismiss Button Colors" # Original: Dismiss Button Colors
+      buttonBackgroundColor: "Background" # Original: Background
+      buttonTextColor: "Text" # Original: Text
+
+      themes:
+        blocky: "Blocky" # Original: Blocky
+        edgeless: "Edgeless" # Original: Edgeless
+        classic: "Classic" # Original: Classic
+        custom: "Custom" # Original: Custom
+        no_css: "Nay CSS" # Original: No CSS

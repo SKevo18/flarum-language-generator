@@ -1,0 +1,12 @@
+flarum-ext-keywords:
+  forum:
+    title: "Glossary" # Original: Glossary
+    pagetitle: "Glossary Page" # Original: Glossary Page
+    tagline: "Do ye want t' be knowin' more about th' terms used on this site?  And swab the deck! See th' Glossary t' find out more" # Original: Do you want to know more about the terms used on this site? See the Glossary to find out more
+    searchtext: "Type t' search through glossary..." # Original: Type to search through glossary...
+  admin:
+    word: "Word" # Original: Word
+    removedef: "Delete definition" # Original: Delete definition
+    definition: "Definition" # Original: Definition
+    parseonce: "Parse th' words once in a post" # Original: Parse the words once in a post
+

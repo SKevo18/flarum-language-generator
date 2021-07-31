@@ -1,0 +1,58 @@
+justoverclock-feedback:
+  admin:
+    contactmail: "Email address to send feedback to" # Original: Email address to send feedback to
+    feedback1-title: "Feedback type 1" # Original: Feedback type 1
+    feedback1-title-help: "Customize here the name of your" # Original: Customize here the name of your 
+    feedback1-icon: "Icon for Feedback type 1" # Original: Icon for Feedback type 1
+    feedback1-icon-help: "Put a text icon like" # Original: Put a text icon like 
+    feedback2-title: "Feedback type 2" # Original: Feedback type 2
+    feedback2-title-help: "Customize here the name of your" # Original: Customize here the name of your 
+    feedback2-icon: "Icon for Feedback type 2" # Original: Icon for Feedback type 2
+    feedback2-icon-help: "Put a text icon like" # Original: Put a text icon like 
+    feedback3-title: "Feedback type 3" # Original: Feedback type 3
+    feedback3-title-help: "Customize here the name of your" # Original: Customize here the name of your 
+    feedback3-icon: "Icon for Feedback type 3" # Original: Icon for Feedback type 3
+    feedback3-icon-help: "Put a text icon like" # Original: Put a text icon like 
+    contactdesc: "This must be filled in to fully enable the feedback widget" # Original: This must be filled in to fully enable the feedback widget
+    collect-email: "Display (optional) email address field to users" # Original: Display (optional) email address field to users
+    collect-email-help: "When enabled, users are able to add their email address to the feedback" # Original: When enabled, users are able to add their email address to the feedback
+    position: "Widget position" # Original: Widget position
+    position-help: "Select bottom left or bottom right to display the feedback button" # Original: Select bottom left or bottom right to display the feedback button
+    right_label: "Right" # Original: Right
+    left_label: "Left" # Original: Left
+    background-color: "Widget background color" # Original: Widget background color
+    background-color-help: "Provide a hex color code to use as the background color, ie" # Original: Provide a hex color code to use as the background color, ie 
+    font-color: "Widget font color" # Original: Widget font color
+    font-color-help: "Provide a hex color code to use as the font color, ie" # Original: Provide a hex color code to use as the font color, ie 
+    box-title: "Box Title" # Original: Box Title
+    box-title-help: "Set the title of the popup feedback widget (old" # Original: Set the title of the popup feedback widget (old 
+  api:
+    validation_error: "You cannot send empty feedback" # Original: You cannot send empty feedback
+  forum:
+    button-title: "Feedback" # Original: Feedback
+    feedback-widget:
+      title: "Flarum Feedback" # Original: Flarum Feedback
+      placeholder: "Enter your feedback here" # Original: Enter your feedback here
+      email-placeholder: "Email (optional)" # Original: Email (optional)
+      submit: "Submit" # Original: Submit
+      back: "Back" # Original: Back
+      contact-text: "Or send an email!" # Original: Or send an email!
+      type-message: "What feedback do you have?" # Original: What feedback do you have?
+      success: "Thanks!👊" # Original: Thanks!👊
+      failed-title: "Oops, an error ocurred" # Original: Oops, an error ocurred
+      failed-message: "Please try again. If this keeps happening, try to send an email instead." # Original: Please try again. If this keeps happening, try to send an email instead.
+      email-field-placeholder: "Email (optional field)" # Original: Email (optional field)
+      types:
+        general: "General feedback" # Original: General feedback
+        idea: "I have an idea" # Original: I have an idea
+        bug: "Bug Report" # Original: Bug Report
+    email:
+      guest: "an anonymous user" # Original: an anonymous user
+      subject: "Feedback" # Original: Feedback
+      body: |
+       New {type} feedback from {user}!
+
+       {message}
+
+       Email: {email}
+       Url: {url}

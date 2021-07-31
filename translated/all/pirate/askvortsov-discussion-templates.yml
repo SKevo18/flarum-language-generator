@@ -1,0 +1,24 @@
+askvortsov-discussion-templates:
+  admin:
+    permissions:
+      manage_own_discussion_reply_templates: "Manage reply templates fer their discussions" # Original: Manage reply templates for their discussions
+      manage_all_reply_templates: "Manage reply templates fer all discussions" # Original: Manage reply templates for all discussions
+    settings:
+      no_tag_template: "Default template (used when discussion started with no tags selected):" # Original: Default template (used when discussion started with no tags selected):
+      append_template_on_tag_change: "Append template on tag change?" # Original: Append template on tag change?
+      append_template_on_tag_change_help: "When tags be changed, should th' new tag" # Original: When tags are changed, should the new tag
+    tags:
+      tag_template_heading: "Discussion Template" # Original: Discussion Template
+      tag_template_text: "Manage a template fer new discussions in this tag." # Original: Manage a template for new discussions in this tag.
+      tag_template_button: "Edit Template" # Original: Edit Template
+    tag_template_modal:
+      title: "Discussion Template" # Original: Discussion Template
+      customize_text: "Manage a template fer new discussions in this tag." # Original: Manage a template for new discussions in this tag.
+      submit_button: "Save Template" # Original: Save Template
+
+  forum:
+    discussion_controls:
+      reply_template_button: "Edit Reply Template" # Original: Edit Reply Template
+    reply_template:
+      title: "Edit Reply Template" # Original: Edit Reply Template
+      submit_button: "Save Reply Template" # Original: Save Reply Template
