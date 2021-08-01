@@ -1,8 +1,14 @@
-from flarum_language_generator.extra.funny import translate_to_lolcat, translate_to_pirate
-from typing import Callable, Union, List
+from typing import Callable, Generator, Union
 
 import re
+
 from deep_translator import GoogleTranslator
+try:
+    from flarum_language_generator.extra.funny import translate_to_lolcat, translate_to_pirate
+except:
+    pass
+
+YAML_LINE_REGEX = re.compile(r"^( +)([\w\d-]+) *:(?!(?:[\r\n]+| ?(?:\||\|-|>|>-|=>))) ?[\"']?([^\r\n\"'{}]+)[\"']?$")
 
 
 def translate_string(string: str, target_language_code: str) -> str:
@@ -22,56 +28,85 @@ def translate_string(string: str, target_language_code: str) -> str:
         return string
 
 
-def translate_yaml(yaml_text: str, target_language_code: str, translate_func: Callable[[str, str], str]=translate_string) -> Union[str, None]:
-    # FIXME: This is the biggest, inefficient mess. Fixation is appreciated.
-    # I am not good with RegEx.
-    def __translate(yaml_text: str) -> str:
-        line_regex = re.compile(r'''^(\s+)([a-zA-Z_\-0-9]+)(\s+)?:(\s+)?(?:"|')?(?=([^'"]+))(?:"|')?''')
-        clean_value_regex = re.compile(r'''^(?!=>|\|-|>-|\||>|\s)+(.+)''')
-        bad_value_regex = re.compile(r'''.*(?:{.*}|#).*''')
+def translate_yaml(yaml_text: str, target_language_code: str, translate_func: Callable[[str, str], str]=translate_string, iterator: bool=True) -> Union[str, Generator[str, None, None]]:
+    def __translate(to_translate: str) -> Generator[str, None, None]:
+        yield "# Automatically translated with https://github.com/CWKevo/flarum-language-generator\n\n"
 
-        new_lines = list() # type: List[str]
+        for line in to_translate.splitlines(keepends=True):
+            match = YAML_LINE_REGEX.match(line)
 
-        for line in yaml_text.splitlines(keepends=True):
-            # Entire key: value pair:
-            line_match = line_regex.match(line)
-            if line_match:
-                # The value:
-                value = line_match.group(5)
+            if match:
+                indent = match.group(1)
+                key = match.group(2)
+                value = match.group(3)
 
-                # Value doesn't start with that thingies that allows you to go newline ("|", ">", "|-", ">-"):
-                clean_match = clean_value_regex.match(value)
-                if clean_match:
-                    clean_value = clean_match.group(1)
-
-                    # Value contains variables ("{x}" or "#"):
-                    if not bad_value_regex.match(clean_value):
-                        # Choose correct quotes:
-                        if '"' in clean_value:
-                            translated = translate_func(clean_value.strip(), target_language_code)
-                            new_lines.append(f"{line_match.group(1)}{line_match.group(2)}:{line_match.group(4)}'{translated}' # Original: {clean_value}\n")
-                            continue
-
-                        else:
-                            translated = translate_func(clean_value.strip(), target_language_code)
-                            new_lines.append(f'{line_match.group(1)}{line_match.group(2)}:{line_match.group(4)}"{translated}" # Original: {clean_value}\n')
-                            continue
-
-                    else:
-                        new_lines.append(line)
-                        continue
+                if '"' in value:
+                    quote = "'"
 
                 else:
-                    new_lines.append(line)
-                    continue
+                    quote = '"'
+
+                translation = translate_func(value, target_language_code)
+                yield f"{indent}{key}: {quote}{translation}{quote} # Original: {value}\n"
 
             else:
-                new_lines.append(line)
-                continue
+                yield f"{line}"
 
-        return ''.join(new_lines)
+    if iterator:
+        return __translate(yaml_text)
+
+    else:
+        full_translation = str()
+
+        for line in __translate(yaml_text):
+            full_translation += line
+
+        return full_translation
 
 
-    translated_yaml = __translate(yaml_text)
+if __name__ == "__main__":
+    data = """askvortsov-categories:
+  admin:
+    basics:
+      categories_label: Categories
+    labels:
+      keep_tags_nav: Keep the tags page link in the nav sidebar?
+      child_bare_icon: Bare child icons?
+      compact_mobile_mode: Compact mobile mode
+      full_page_desktop: Full page desktop?
+      parent_remove_icon: Hide icons for top-level tags?
+      parent_remove_description: Hide descriptions for top-level tags?
+      parent_remove_stats: Hide stats for top-level tags?
+      parent_remove_last_discussion: Hide most recent discussions for top-level tags?
+      small_forum_optimized: Optimize for small forums?
+    help:
+      child_bare_icon: Should icons on child categories be displayed without a circular background?
+      full_page_desktop: Should the sidebar nav menu be collapsed to a row (like on the traditional tags page)? This will also hide widgets (such as Friends of Flarum Forum Statistics) from the categories page navbar.
+      small_forum_optimized:  This will give more accurate discussion/post counts, but will slow medium and large forums dramatically.
+    headings:
+      nav: Navigation
+      layout: Layout
+      parent_display: Parent Category Display
+      child_display: Child Category Display
+      performance: Performance
+    title: Categories Settings
 
-    return translated_yaml
+  forum:
+    all_categories:
+      meta_description_text: All Categories
+      meta_title_text: => askvortsov-categories.ref.categories
+    header:
+      back_to_categories_tooltip: Back to Categories
+    index:
+      categories_link: => askvortsov-categories.ref.categories
+    stat-widgets:
+      discussion_label: Discussions
+      post_label: Posts
+    last_discussion_widget:
+      no_discussions: No Discussions (Yet!)
+
+  ref:
+    categories: Categories"""
+
+    for line in translate_yaml(data, "sk"):
+        print(line, end="")

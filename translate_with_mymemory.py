@@ -18,4 +18,4 @@ if __name__ == "__main__":
 
     for language in LANGUAGES:
         print(f"Translating to {language}...")
-        translate_locales(to_language=language, translated_directory=f"all/{language}", translate_func=translate_string_with_mymemory)
+        translate_locales(to_language=language, translation_directory=f"all/{language}", translate_func=translate_string_with_mymemory)

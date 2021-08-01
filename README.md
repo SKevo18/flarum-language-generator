@@ -2,11 +2,6 @@
 
 Scrap and translate Flarum language files automatically.
 
-## Known issues:
-- translate_yaml() function is bloated and probably very inefficient
-- If original contains apostrophe ('), the translated string gets cut to this point.
-- Core locale gets overwritten by other locale, I don't know why
-
 I think that this should be entirely recoded and made more efficient and glitch-free. I will do it, but this is at the bottom of my priorities list, so it won't
 happen anytime soon.
 
